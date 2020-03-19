@@ -14,6 +14,27 @@
   }
   
 
+  /* Global animation */
+.animateMe{
+  transform: scale(0.98);
+  opacity: 0.5;
+  animation-name: example;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  0% {transform:scale(0.98);
+    opacity: 0.5;
+  }
+
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+ 
+}
+
 
 
   .App-header {
@@ -170,44 +191,169 @@
   font-weight: bold;
   font-size: 20px;
 }
+/* Event page */
+/* Event Showcase */
+
+.event-showcase{
+  background: #0d3b61fd;
+  padding: 10px;
+  position: relative;
+  color: white;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.event-showcase::before{
+  content: '';
+    background: url('/ImageResources/diana-vargas-ZySVEbGBNxA-unsplash.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+.event-showcase p{
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  margin-top: 140px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.event-showcase:hover{
+  background: black;
+  transition: all 1s ease-in;
+}
+
+.month-T{
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(28, 56, 180);
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.8;
+}
+
+.event-card{
+  /* width: 100%; */
+  /* padding: 20px; */
+  border-radius: 5px;
+  margin-top: 30px;
+  display: inline-grid;
+  justify-content: center;
+  grid-template-columns: repeat(5, 2fr);
+  height: 300px;
+}
 
 
+.item {
+  border:1px rgba(158, 155, 155, 0.322) solid;
+  text-align: center;
+  align-content: center;
+  padding-top: 20px;
+}
 
+.event-description {
+  grid-column: 4 / 6 ;
+  font-style: italic;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.event-brief{
+  grid-column-start: 3 ;
+  grid-column-end: 5;
+  font-family: 'Quicksand', sans-serif;
   
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+}
+
+.event-time{
+  grid-column-start: 3 ;
+  grid-column-end: 4;
   
+}
+/* Event img */
+
+.event-img {
+  background: url('/Events/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg') no-repeat center center/cover;
+  grid-row-start: 1;
+  grid-row-end:3 ;
+  grid-column-start: 1 ;
+  grid-column-end: 3;
+  opacity: 1;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.event-img:hover{
+  opacity: 0.9;
+}
+
+.label{
+  background-color: rgba(1, 53, 196);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  opacity: 0.5;
+  bottom: 0;
+  transition: all 1s ease-in;
+  width:20%
+  
+}
+
+.label:hover{
+  opacity: 1;
+  width: 22%;
+}
+/* Event Venue */
+
+
+.event-venue{
+  grid-column-start: 5;
+  text-align: center;
+}
+
+
+/* Prayer Request */
+
+.prayer-showcase{
+  background: #614d0d;
+  padding: 10px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  height: 50vh;
+}
+
+.prayer-showcase:before{
+  content: '';
+  background: url('/ImageResources/samuel-martins-3U7HcqkIbb4-unsplash.jpg') no-repeat center center/cover;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+.prayer-showcase p {
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  align-self: center;
+  margin-top: 100px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Compiled and minified CSS -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/a112c21e50.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/mobile.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
      <!--Import Google Icon Font-->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,6 +20,8 @@
      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
      <link rel="stylesheet" href="Styles.css">
+     <link rel="stylesheet" media="screen and (max-width: 768px)" href="./MobileCss/Mobile.css">
+     <link rel="stylesheet" media= "screen and (min-width : 768px)" href="./MobileCss/widescreen.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -32,29 +36,26 @@
                   <a href="#!" class="brand-logo myA">Worshiper's Gathering</a>
                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                   <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html.html">Home</a></li>
-                    <li><a href="Prayer.html.html">Prayer</a></li>
-                    <li><a href="Events.html.html">Events</a></li>
+                    <li class="active"><a  href="index.html">Home</a></li>
+                    <li><a href="Prayer.html">Prayer</a></li>
+                    <li><a href="Events.html">Events</a></li>
                     <li><a href="About.html">About</a></li>
                   </ul>
                 </div>
               </nav>
 
-        
-          <ul class="sidenav" id="mobile-demo">
-            <li><a href="index.html.html">Home</a></li>
-                <li><a href="Prayer.html.html">Prayer</a></li>
-                <li><a href="Events.html.html">Events</a></li>
+              <ul class="sidenav" id="mobile-demo">
+                <li ></li><a  href="index.html">Home</a></li>
+                <li><a href="Prayer.html">Prayer</a></li>
+                <li><a href="Events.html">Events</a></li>
                 <li><a href="About.html">About</a></li>
-          </ul>
-
-        </div>
+              </ul>
 
         <!-- Showcase -->
         <div class="showCase  ">
             
               <div class="container">
-                <div class="image-container ">
+                <div class="image-container animateMe">
                 <div class="row">
                   <div class="col s12 m12 l12">
                     <div class="slider">
@@ -96,16 +97,16 @@
             </div>
           </div>
 <!-- weekly verse Section -->
-          <section class="weekly-verse">
+          <section class="weekly-verse animateMe">
             <div class="verse shadowed">
-                <h4 class="weekly">" Weekly Verse "</h4>
+                <h4 class="weekly animateMe">" Weekly Verse "</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, voluptatibus?</p>
             </div>
           </section>
 
     <!-- Upcoming Events -->
 
-    <section class="upcoming-events">
+    <section class="upcoming-events animateMe">
         <div class="divider"></div>
         <h4 class="center text-blue">Events</h4>
         <div class="container">
@@ -176,7 +177,7 @@
 
     <!-- Service Hours -->
 
-    <section class="service-hours">
+    <section class="service-hours animateMe">
       <div class="divider"></div>
       <div class="container">
         <h4 class="center">Service hours</h4>
@@ -193,6 +194,8 @@
         </div>
       </div>
     </section>
+
+    
   <!-- footer -->
 
   <footer class="page-footer blue darken-2">

@@ -1,0 +1,58 @@
+
+    .event-brief{
+      display: none;
+    }
+  
+    .event-card{
+      /* width: 100%; */
+      /* padding: 20px; */
+      border-radius: 5px;
+      margin-top: 30px;
+      display: inline-grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: 1fr;
+      height: 300px;
+      margin-bottom: 280px;
+
+    }
+  
+    .event-description {
+      grid-column: 1;
+      font-style: italic;
+    }
+  
+    .event-img {
+      background: url('/Events/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg') no-repeat center center/cover;
+      grid-column: 1;
+      overflow: hidden;
+      height: 200px;
+      opacity: 1;
+      border: none;
+    }
+  
+    .event-img:hover{
+      opacity: 1;
+    }
+  
+    .label{
+      margin: auto;
+      position: fixed;
+      bottom: 100px;
+      width:20%;
+      opacity: 0.5;
+      transition: all 0.5s ease-in;
+    }
+  
+    .label:hover{
+      opacity: 1;
+    }
+    
+  
+    .event-time {
+      grid-column: 1;
+    }
+    .event-venue{
+      grid-column: 1;
+      line-height: 2;
+    }
