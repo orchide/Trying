@@ -58,6 +58,7 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    
   }
 
   main {
@@ -125,7 +126,7 @@
   }
 
   /* Verse */
-  .verse{
+  .verse1{
     text-align: center;
   }
 
@@ -180,11 +181,12 @@
   width: 50%;
   border: none;
   border-radius: 3px;
+  margin-left: 20px;
 }
 
 .myForm input[type=email]:focus {
   
-  border-bottom: none;
+  border: none;
 }
 
 .newsLetter{
@@ -318,12 +320,12 @@
 /* Prayer Request */
 
 .prayer-showcase{
-  background: #614d0d;
+  background: #0d3b61fd;
   padding: 10px;
-  color: white;
   position: relative;
-  overflow: hidden;
+  color: white;
   height: 50vh;
+  overflow: hidden;
 }
 
 .prayer-showcase:before{
@@ -347,8 +349,156 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.Prayer-section .container h2{
+  width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid rgba(146, 146, 146, 0.623); 
+   line-height: 0.1em;
+   margin-bottom:40px;
+   font-size: 40px;
+  }
+
+.Prayer-section .container h2 span{
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.verse{
+  height: 500px;
+}
+.shadowed3{
+  height: 200px;
+}
+
+/* Section About */
+
+.about-section{
+  background: #0c0725;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.about-section h4{
+  font-weight: bold;
+}
 
 
+.about-section .about-p{
+  width: 600px;
+  
+}
+
+.about-section p{
+  line-height: 2;
+}
+
+.subtab .list-group{
+  text-align: center;
+  line-height: 2;
+}
+
+.list-group li a{
+  color: white; 
+  margin-bottom: 10px;
+}
+.list-group li{
+  padding: 10px;
+}
+
+.list-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(69, 73, 97);
+  position: relative;
+  top:80px ;
+}
+
+.active-sub{
+  background-color: black;
+}
+
+/* About us Paragraph */
+
+.about-p{
+  padding:50px;
+
+}
+
+.about-p p{
+  line-height: 3;
+  font-style: italic;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-p span {
+  font-weight: bolder;
+}
+
+
+
+
+/* Staff */
+
+.staff-section .container h2{
+  width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid rgba(146, 146, 146, 0.623); 
+   line-height: 0.1em;
+   margin-bottom:40px;
+   font-size: 40px;
+  }
+
+.staff-section .container h2 span{
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.staff-section .container .staff-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.staff-section .container .staff-container .member img{
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  float: left;
+}
+
+.staff-section .container .staff-container .member{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  background: rgba(247, 246, 238, 0.767);
+  border: 1px solid rgba(184, 184, 184, 0.247);
+  margin-bottom: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.member .Contact h4{
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.member .Contact p{
+  font-family: 'Montserrat', sans-serif;
+  color: gray;
+}
+
+.member .Contact i{
+  color: rgb(66, 66, 66);
+}
+
+.member .Contact a{
+  color: rgb(66, 66, 66);
+}
 
 
 
