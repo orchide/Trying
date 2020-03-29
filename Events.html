@@ -19,6 +19,7 @@
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!--Import materialize.css-->
      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
 
      <link rel="stylesheet" href="Styles.css">
      <link rel="stylesheet" media="screen and (max-width: 600px)" href="./MobileCss/Mobile.css">
@@ -68,9 +69,9 @@
        <section class="event section">
            <div class="container">
             <div class="divider"></div>
-            <p class="center month-T animateMe">This month's Main Event</p>
+            <p class="center month-T animateMe black-text darken-4">COVID-19: Our Response</p>
             <div class="divider"></div>
-            <div class="event-card card animateMe">
+            <!-- <div class="event-card card animateMe">
                 <div class="event-img">
                     <div class="label"><p>Heart Cleansing service</p></div>
                 </div>
@@ -94,42 +95,90 @@
                         <li>OTTAWA ON</li>
                     </ul>
                 </div>
+            </div> -->
+            <div class="about-covid center-align">
+              <p>
+                In an effort to keep our community safe and maintain the current best practices in response to the COVID-19 pandemic, we have decided to close the church office until further notice. Our staff team will continue to be working remotely from our homes, and small teams practicing safe social distancing will be continuing essential work from the church building that cannot be conducted offsite.
+
+Our church phone line will still be open, and we will have access to any messages left at the office via the phone<span><a href="tel:+1(613) 899-5235"> (613) 899-5235</a></span>
+                </p>
+                <p>If you have any practical needs or prayer requests let us know!
+                  <span><a href="#modal1" class="modal-trigger">Fill out our online Form</a></span></p>
             </div>
            </div>
        </section>
 
 
-  <footer class="page-footer blue darken-2">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m4 l4 center-align">
-          <img src="./ImageResources/android-chrome-192x192.png" class="responsive-image myLogo" alt="">
+
+
+
+
+
+       <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4 class="center">Prayer Request</h4>
+          
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="icon_telephone" type="tel" class="validate">
+                  <label for="icon_telephone">Telephone</label>
+                </div>
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1" placeholder="Please Provide a few details on your Prayer request..... ">Request Details</label>
+                </div>
+                <button class="btn waves-effect waves-light right blue" type="submit" name="action">Send
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="col s12 m4 l4">
-          <ul class="list-footer">
-            <li> <i class="tiny material-icons">location_on</i><a class="grey-text text-lighten-3" href="#!">123 Main st</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Ottawa ON</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">ABC 123</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Canada</a></li>
-          </ul>
-        </div>
-        <div class="col s12 m4 l4">
-         <p class="center newsLetter">Register to Our News Letter</p>
-         <form class="myForm">
-           <input type="email" name="email" id="email" placeholder="Enter Your Email">
-           <button class="btn blue waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">send</i>
-          </button>
-         </form>
-        </div>
+        
       </div>
-    </div>
-    <div class="footer-copyright blue darken-4">
-      <div class="container">
-      <p class="center">Copyrights &copy; Worshiper's Gathering 2020 </p>
-      </div>
-    </div>
-  </footer>
+
+
+
+       <footer class="page-footer blue darken-2">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m4 l4 center-align">
+              <img src="./ImageResources/android-chrome-192x192.png" class="responsive-image myLogo" alt="">
+            </div>
+            <div class="col s12 m4 l4">
+              <ul class="list-footer">
+                <li> <i class="tiny material-icons">location_on</i><a class="grey-text text-lighten-3" href="#!">235 Montreal Rd,</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Vanier, ON</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">K1L 5P8</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Canada</a></li>
+              </ul>
+            </div>
+            <div class="col s12 m4 l4">
+             <p class="center newsLetter">Register to Our News Letter</p>
+             <form class="myForm">
+               <input type="email" name="email" id="email" placeholder="Enter Your Email">
+               <button class="btn blue waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+             </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright blue darken-4">
+          <div class="container">
+          <p class="center">Copyrights &copy; Worshiper's Gathering 2020 </p>
+          </div>
+        </div>
+      </footer>
+          
       
               
     <script src="app.js"></script>

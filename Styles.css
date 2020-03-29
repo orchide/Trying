@@ -1,21 +1,50 @@
-.App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
+.alert-covid {
+  background: rgb(112, 1, 1);
+  color: white;
+}
 
-  /* Global animation */
-.animateMe{
+.covid {
+  margin: auto;
+}
+.covid:hover {
+  background: rgba(63, 1, 1, 0.671);
+  color: white;
+}
+
+.bg-alert {
+  background: rgb(63, 1, 1);
+  color: white;
+  height: 200px;
+}
+
+.about-covid p {
+  line-height: 3;
+  font-style: normal;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-covid span {
+  font-weight: bolder;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Global animation */
+.animateMe {
   transform: scale(0.98);
   opacity: 0.5;
   animation-name: example;
@@ -24,158 +53,164 @@
 }
 
 @keyframes example {
-  0% {transform:scale(0.98);
+  0% {
+    transform: scale(0.98);
     opacity: 0.5;
   }
 
-  100%{
+  100% {
     transform: scale(1);
     opacity: 1;
   }
- 
 }
 
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
+.App-link {
+  color: #61dafb;
+}
 
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    
-  }
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
-  
-  
-  .myLogo{
-    padding: 10px;
-    width: 150px;
-  
-  }
-  .myLogo2{
-    font-size: 30px;
-    color: black;
-    text-align: center;
-    
-  }
-  .myline{
-    border-left: 1px solid rgba(189, 189, 189, 0.603);
-    height: 30px;
-    margin-top: 20px;
-  }
-  
-  
-  
-  
-  /* Showcase  */
-  
-  .showCase{
-    background: #0d3b61fd;
-    padding: 10px;
-    color: white;
-    position: relative;
-    /* height: 100vh; */
-    overflow: hidden;
-  }
-  
-  .showCase:before{
-    content: '';
-    background: url('./ImageResources/diana-vargas-ZySVEbGBNxA-unsplash.jpg') no-repeat center center/cover;
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-    overflow: hidden;
-  }
-  
-  .image-container{
-    content: '';
-    background: #000000a4;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 10px;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin:auto;
-    }
-  .slider {
-    margin-top: 10px;
-  }
+main {
+  flex: 1 0 auto;
+}
 
-  /* Verse */
-  .verse1{
-    text-align: center;
-  }
+.myLogo {
+  padding: 10px;
+  width: 150px;
+}
+.myLogo2 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+.myline {
+  border-left: 1px solid rgba(189, 189, 189, 0.603);
+  height: 30px;
+  margin-top: 20px;
+}
 
-  .shadowed {
-    background: white;
-    height: 200px;
-    margin: 50px;
-    padding: 20px;
-    position: relative;
-  }
-  
-  .shadowed::after {
-    border-radius: 0 0 300px 300px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-    content: '';
-    display: block;
-    height: 200px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-  }
+.psalms {
+  font-family: 'Gotu', sans-serif;
+}
+
+.Prayer {
+  font-family: 'Gotu', sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  color: black;
+}
+
+/* Showcase  */
+
+.showCase {
+  background: #0d3b61fd;
+  padding: 10px;
+  color: white;
+  position: relative;
+  /* height: 100vh; */
+  overflow: hidden;
+}
+
+.showCase:before {
+  content: '';
+  background: url('./ImageResources/diana-vargas-ZySVEbGBNxA-unsplash.jpg')
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+.image-container {
+  content: '';
+  background: #000000a4;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin: auto;
+}
+.slider {
+  margin-top: 10px;
+}
+
+/* Verse */
+.verse1 {
+  text-align: center;
+}
+
+.shadowed {
+  background: white;
+  height: 200px;
+  margin: 50px;
+  padding: 20px;
+  position: relative;
+}
+
+.shadowed::after {
+  border-radius: 0 0 300px 300px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  content: '';
+  display: block;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
 
 /* Service and Location */
-.service-hour{
+.service-hour {
   position: relative;
   bottom: 10px;
 }
-.icon-container{
+.icon-container {
   position: relative;
   left: 140px;
   bottom: 70px;
   margin-top: 10px;
 }
 
-.list-footer li{
+.list-footer li {
   padding: 5px;
   text-align: center;
   border-bottom: 1px dotted #fff4;
 }
-.myForm{
+.myForm {
   padding: 10px;
   text-align: center;
   justify-content: center;
   align-content: center;
 }
 
-.myForm #email{
+.myForm #email {
   padding: 2px;
   color: white;
   width: 50%;
@@ -184,19 +219,18 @@
   margin-left: 20px;
 }
 
-.myForm input[type=email]:focus {
-  
+.myForm input[type='email']:focus {
   border: none;
 }
 
-.newsLetter{
+.newsLetter {
   font-weight: bold;
   font-size: 20px;
 }
 /* Event page */
 /* Event Showcase */
 
-.event-showcase{
+.event-showcase {
   background: #0d3b61fd;
   padding: 10px;
   position: relative;
@@ -205,19 +239,20 @@
   overflow: hidden;
 }
 
-.event-showcase::before{
+.event-showcase::before {
   content: '';
-    background: url('/ImageResources/diana-vargas-ZySVEbGBNxA-unsplash.jpg') no-repeat center center/cover;
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-    overflow: hidden;
+  background: url('/ImageResources/diana-vargas-ZySVEbGBNxA-unsplash.jpg')
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  overflow: hidden;
 }
 
-.event-showcase p{
+.event-showcase p {
   font-size: 40px;
   text-align: center;
   position: relative;
@@ -225,12 +260,12 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-.event-showcase:hover{
+.event-showcase:hover {
   background: black;
   transition: all 1s ease-in;
 }
 
-.month-T{
+.month-T {
   font-weight: bold;
   font-size: 20px;
   color: rgb(28, 56, 180);
@@ -238,7 +273,7 @@
   opacity: 0.8;
 }
 
-.event-card{
+.event-card {
   /* width: 100%; */
   /* padding: 20px; */
   border-radius: 5px;
@@ -249,48 +284,46 @@
   height: 300px;
 }
 
-
 .item {
-  border:1px rgba(158, 155, 155, 0.322) solid;
+  border: 1px rgba(158, 155, 155, 0.322) solid;
   text-align: center;
   align-content: center;
   padding-top: 20px;
 }
 
 .event-description {
-  grid-column: 4 / 6 ;
+  grid-column: 4 / 6;
   font-style: italic;
 }
 
-.event-brief{
-  grid-column-start: 3 ;
+.event-brief {
+  grid-column-start: 3;
   grid-column-end: 5;
   font-family: 'Quicksand', sans-serif;
-  
 }
 
-.event-time{
-  grid-column-start: 3 ;
+.event-time {
+  grid-column-start: 3;
   grid-column-end: 4;
-  
 }
 /* Event img */
 
 .event-img {
-  background: url('/Events/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg') no-repeat center center/cover;
+  background: url('/Events/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg')
+    no-repeat center center/cover;
   grid-row-start: 1;
-  grid-row-end:3 ;
-  grid-column-start: 1 ;
+  grid-row-end: 3;
+  grid-column-start: 1;
   grid-column-end: 3;
   opacity: 1;
   overflow: hidden;
   transition: all 0.2s ease-in;
 }
-.event-img:hover{
+.event-img:hover {
   opacity: 0.9;
 }
 
-.label{
+.label {
   background-color: rgba(1, 53, 196);
   color: white;
   padding: 5px;
@@ -300,26 +333,23 @@
   opacity: 0.5;
   bottom: 0;
   transition: all 1s ease-in;
-  width:20%
-  
+  width: 20%;
 }
 
-.label:hover{
+.label:hover {
   opacity: 1;
   width: 22%;
 }
 /* Event Venue */
 
-
-.event-venue{
+.event-venue {
   grid-column-start: 5;
   text-align: center;
 }
 
-
 /* Prayer Request */
 
-.prayer-showcase{
+.prayer-showcase {
   background: #0d3b61fd;
   padding: 10px;
   position: relative;
@@ -328,11 +358,12 @@
   overflow: hidden;
 }
 
-.prayer-showcase:before{
+.prayer-showcase:before {
   content: '';
-  background: url('/ImageResources/samuel-martins-3U7HcqkIbb4-unsplash.jpg') no-repeat center center/cover;
+  background: url('/ImageResources/samuel-martins-3U7HcqkIbb4-unsplash.jpg')
+    no-repeat center center/cover;
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -349,30 +380,74 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.Prayer-section .container h2{
-  width: 100%; 
-   text-align: center; 
-   border-bottom: 1px solid rgba(146, 146, 146, 0.623); 
-   line-height: 0.1em;
-   margin-bottom:40px;
-   font-size: 40px;
-  }
-
-.Prayer-section .container h2 span{
-    background:#fff; 
-    padding:0 10px; 
+.Prayer-section .container h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(146, 146, 146, 0.623);
+  line-height: 0.1em;
+  margin-bottom: 40px;
+  font-size: 40px;
 }
 
-.verse{
+.Prayer-section .container h2 span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.verse {
   height: 500px;
 }
-.shadowed3{
+.shadowed3 {
   height: 200px;
+}
+
+.form-container {
+  margin-top: 30px;
+  padding: 20px;
+  align-items: center;
+}
+
+.form-container form button {
+  width: 100%;
+}
+
+.form-container .input-field label :focus {
+  color: gray;
+}
+
+.form-container .input-field input[type='text']:focus + label {
+  color: #000;
+}
+
+.form-container .input-field input[type='text']:focus {
+  border-bottom: none;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+.form-container .input-field input[type='tel']:focus + label {
+  color: #000;
+}
+
+.form-container .input-field input[type='tel']:focus {
+  border-bottom: none;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+.form-container .input-field textarea:focus + label {
+  color: rgb(5, 3, 99);
+}
+
+.form-container .input-field textarea:focus {
+  border-bottom: none;
+  box-shadow: 0 1px 0 0 #000;
+}
+.form-container .input-field .prefix.active {
+  color: rgb(14, 0, 170);
 }
 
 /* Section About */
 
-.about-section{
+.about-section {
   background: #0c0725;
   color: white;
   position: relative;
@@ -380,54 +455,51 @@
   height: 200px;
 }
 
-.about-section h4{
+.about-section h4 {
   font-weight: bold;
 }
 
-
-.about-section .about-p{
+.about-section .about-p {
   width: 600px;
-  
 }
 
-.about-section p{
+.about-section p {
   line-height: 2;
 }
 
-.subtab .list-group{
+.subtab .list-group {
   text-align: center;
   line-height: 2;
 }
 
-.list-group li a{
-  color: white; 
+.list-group li a {
+  color: white;
   margin-bottom: 10px;
 }
-.list-group li{
+.list-group li {
   padding: 10px;
 }
 
-.list-group{
+.list-group {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: rgb(69, 73, 97);
   position: relative;
-  top:80px ;
+  top: 80px;
 }
 
-.active-sub{
+.active-sub {
   background-color: black;
 }
 
 /* About us Paragraph */
 
-.about-p{
-  padding:50px;
-
+.about-p {
+  padding: 50px;
 }
 
-.about-p p{
+.about-p p {
   line-height: 3;
   font-style: italic;
   font-size: 15px;
@@ -438,39 +510,36 @@
   font-weight: bolder;
 }
 
-
-
-
 /* Staff */
 
-.staff-section .container h2{
-  width: 100%; 
-   text-align: center; 
-   border-bottom: 1px solid rgba(146, 146, 146, 0.623); 
-   line-height: 0.1em;
-   margin-bottom:40px;
-   font-size: 40px;
-  }
-
-.staff-section .container h2 span{
-    background:#fff; 
-    padding:0 10px; 
+.staff-section .container h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(146, 146, 146, 0.623);
+  line-height: 0.1em;
+  margin-bottom: 40px;
+  font-size: 40px;
 }
 
-.staff-section .container .staff-container{
+.staff-section .container h2 span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.staff-section .container .staff-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.staff-section .container .staff-container .member img{
+.staff-section .container .staff-container .member img {
   width: 400px;
   height: 300px;
   padding: 20px;
   float: left;
 }
 
-.staff-section .container .staff-container .member{
+.staff-section .container .staff-container .member {
   display: flex;
   flex-direction: row;
   margin-left: 10px;
@@ -481,29 +550,21 @@
   padding: 10px;
 }
 
-.member .Contact h4{
+.member .Contact h4 {
   font-size: 25px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 
-.member .Contact p{
+.member .Contact p {
   font-family: 'Montserrat', sans-serif;
   color: gray;
 }
 
-.member .Contact i{
+.member .Contact i {
   color: rgb(66, 66, 66);
 }
 
-.member .Contact a{
+.member .Contact a {
   color: rgb(66, 66, 66);
 }
-
-
-
-
-
-
-
-
