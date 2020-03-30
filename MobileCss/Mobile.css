@@ -1,58 +1,102 @@
+.event-brief {
+  display: none;
+}
 
-    .event-brief{
-      display: none;
-    }
-  
-    .event-card{
-      /* width: 100%; */
-      /* padding: 20px; */
-      border-radius: 5px;
-      margin-top: 30px;
-      display: inline-grid;
-      justify-content: center;
-      align-items: center;
-      grid-template-columns: 1fr;
-      height: 300px;
-      margin-bottom: 280px;
+.event-card {
+  /* width: 100%; */
+  /* padding: 20px; */
+  border-radius: 5px;
+  margin-top: 30px;
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  height: 300px;
+  margin-bottom: 280px;
+}
 
-    }
-  
-    .event-description {
-      grid-column: 1;
-      font-style: italic;
-    }
-  
-    .event-img {
-      background: url('/Events/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg') no-repeat center center/cover;
-      grid-column: 1;
-      overflow: hidden;
-      height: 200px;
-      opacity: 1;
-      border: none;
-    }
-  
-    .event-img:hover{
-      opacity: 1;
-    }
-  
-    .label{
-      margin: auto;
-      position: fixed;
-      bottom: 100px;
-      width:20%;
-      opacity: 0.5;
-      transition: all 0.5s ease-in;
-    }
-  
-    .label:hover{
-      opacity: 1;
-    }
-    
-  
-    .event-time {
-      grid-column: 1;
-    }
-    .event-venue{
-      grid-column: 1;
-      line-height: 2;
-    }
+.event-description {
+  grid-column: 1;
+  font-style: italic;
+}
+
+.event-img {
+  background: url('/Events/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg')
+    no-repeat center center/cover;
+  grid-column: 1;
+  overflow: hidden;
+  height: 200px;
+  opacity: 1;
+  border: none;
+}
+
+.event-img:hover {
+  opacity: 1;
+}
+
+.label {
+  margin: auto;
+  position: fixed;
+  bottom: 100px;
+  width: 20%;
+  opacity: 0.5;
+  transition: all 0.5s ease-in;
+}
+
+.label:hover {
+  opacity: 1;
+}
+
+.event-time {
+  grid-column: 1;
+}
+.event-venue {
+  grid-column: 1;
+  line-height: 2;
+}
+
+/* About Page */
+.about-section {
+  height: 300px;
+}
+
+.about-section .subtab .list-group li {
+  padding: 12px;
+  border-bottom: 1px dotted rgba(128, 128, 128, 0.397);
+}
+
+.about-section .subtab .list-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(69, 73, 97);
+  position: relative;
+  top: 80px;
+}
+
+.staff-section .container .staff-container .member {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  background: rgba(247, 246, 238, 0.767);
+  border: 1px solid rgba(184, 184, 184, 0.247);
+  margin-bottom: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Staff section */
+
+@media (max-width: 600px) {
+  .staff-section .container .staff-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .staff-section .container .staff-container .member img {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+  }
+}

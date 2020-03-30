@@ -22,8 +22,8 @@
      <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
 
      <link rel="stylesheet" href="Styles.css">
-     <link rel="stylesheet" media="screen and (max-width: 600px)" href="./MobileCss/Mobile.css">
-     <link rel="stylesheet" media= "screen and (min-width : 768px)" href="./MobileCss/widescreen.css">
+     <link rel="stylesheet" media="screen and (max-width: 768px)" href="./MobileCss/Mobile.css">
+     <link rel="stylesheet" media= "screen and (max-width : 1100px)" href="./MobileCss/widescreen.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -147,34 +147,50 @@ Our church phone line will still be open, and we will have access to any message
 
 
 
-       <footer class="page-footer blue darken-2">
+      <footer class="page-footer blue-grey darken-4">
         <div class="container">
           <div class="row">
             <div class="col s12 m4 l4 center-align">
               <img src="./ImageResources/android-chrome-192x192.png" class="responsive-image myLogo" alt="">
             </div>
             <div class="col s12 m4 l4">
+              <p class="center newsLetter Prayer">Address</p>
               <ul class="list-footer">
-                <li> <i class="tiny material-icons">location_on</i><a class="grey-text text-lighten-3" href="#!">235 Montreal Rd,</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Vanier, ON</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">K1L 5P8</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Canada</a></li>
+                <li> <i class="tiny material-icons">location_on</i><a class="grey-text text-lighten-3 Prayer" href="#!">235 Montreal Rd,</a></li>
+                <li><a class="grey-text text-lighten-3 Prayer" href="#!">Vanier, ON</a></li>
+                <li><a class="grey-text text-lighten-3 Prayer" href="#!">K1L 5P8</a></li>
+                <li><a class="grey-text text-lighten-3 Prayer" href="#!">Canada</a></li>
               </ul>
             </div>
-            <div class="col s12 m4 l4">
-             <p class="center newsLetter">Register to Our News Letter</p>
-             <form class="myForm">
-               <input type="email" name="email" id="email" placeholder="Enter Your Email">
-               <button class="btn blue waves-effect waves-light" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
-              </button>
-             </form>
+            <div class="col s12 m4 l4 center-align">
+             <p class="center newsLetter Prayer">Contact Us</p>
+              <form class="responsive-form" method="POST">
+                <input class="input-field" type="text" name="email" placeholder="Your Email Address">
+                <textarea name="message" placeholder="Message"></textarea>
+                <input type="submit" value="SUBMIT" class="btn blue darken-4" >
+              </form>
+            </div>
+            <div class="col s12 m4 l4 center-align">
+             <p class="center newsLetter Prayer">Connect with Us </p>
+              <div class="social-container">
+                <a href="https://www.facebook.com/worshippersgathering/" target="_"><i class="fab fa-facebook fa-2x fa-white"></i></a>
+                <a href="https://www.youtube.com/channel/UCqyWYcq7fAXE-rId68jDHdw" target="_"><i class="fab fa-youtube fa-2x"></i></a>
+              </div>
+            </div>
+            <div class="col s12 m4 l4 center-align">
+             <p class="center newsLetter Prayer">Important Links</p>
+             <ul class="list-footer">
+              <li> <a class="white-text  Prayer" href="index.html">Home</a></li>
+              <li><a class="white-text  Prayer" href="Prayer.html">Prayer</a></li>
+              <li><a class="white-text  Prayer" href="Events.html">Events</a></li>
+              <li><a class="white-text  Prayer" href="About.html">About us</a></li>
+            </ul>
             </div>
           </div>
         </div>
         <div class="footer-copyright blue darken-4">
           <div class="container">
-          <p class="center">Copyrights &copy; Worshiper's Gathering 2020 </p>
+          <p class="center Prayer">Copyrights &copy; Worshiper's Gathering 2020 </p>
           </div>
         </div>
       </footer>
